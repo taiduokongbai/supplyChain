@@ -1,0 +1,166 @@
+
+
+
+
+
+
+
+.materialAvailabilityCheck{
+  .materialAvailabilityCheck-search-bar{
+    padding:20px 0;
+
+
+
+
+
+
+
+
+    .materialAvailabilityCheck-warp{
+
+      position: relative;
+
+      .toggle-bar{
+        position: absolute;
+        border-bottom: 1px solid #E2E2E2;
+        width: 100%;
+        top: 74px;
+        left: 0px;
+        height: 1px;
+
+
+        .toggle-handle-bar{
+          line-height: 20px;
+          background: #FFFFFF;
+          border: 1px solid #E2E2E2;
+          border-radius: 10px;
+          padding:0 19px;
+          cursor: pointer;
+          margin-left: -55px;
+
+
+          position: absolute;
+          left:50%;
+          bottom: -10px;
+
+        }
+
+
+      }
+
+
+
+
+      .material-check-list{
+
+
+        .material-search-btn{
+          .c2mfont{
+            font-size: 14px;
+            margin-right: 5px;
+          }
+        }
+
+
+
+        .material-search-tip{
+          justify-content: space-between;
+          display: flex;
+          flex: auto;
+          padding: 0px 24px;
+          height: 34px;
+          .material-search-title{
+            display: flex;
+            align-items: center;
+
+            h2{
+              font-family: PingFangSC-Regular;
+              font-size: 14px;
+              color: #4A4A4A;
+              letter-spacing: 0;
+            }
+          }
+          .material-search-save{
+            display: flex;
+            align-items: center;
+
+            .c2mfont{
+              font-size: 12px;
+              margin-right: 5px;
+            }
+          }
+
+        }
+
+        padding: 20px 0;
+      }
+
+      padding: 0 19px;
+      border: 1px solid #E2E2E2;
+
+
+      .tableListForm {
+
+        padding-top: 10px;
+        .ant-col-sm-24,.ant-col-md-8{
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+
+        :global {
+          .ant-form-item {
+            margin-bottom: 24px;
+            margin-right: 0;
+            display: flex;
+            > .ant-form-item-label {
+              width: auto;
+              line-height: 32px;
+              padding-right: 8px;
+              min-width: 80px;
+            }
+          }
+          .ant-form-item-control-wrapper {
+            flex: 1;
+          }
+        }
+        .submitButtons {
+          white-space: nowrap;
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    .materialAvailabilityCheck-line{
+      border-top: 1px solid #E2E2E2;
+
+    }
+  }
+
+
+  .materialAvailabilityCheck-table{
+
+
+
+
+    .material-table-body{
+
+      margin-top: 20px;
+    }
+
+
+  }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .materialAvailabilityCheck .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .materialAvailabilityCheck .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}

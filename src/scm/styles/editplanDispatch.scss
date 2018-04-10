@@ -1,0 +1,175 @@
+.plan-desk-list-table{
+    .operations-columns{
+        text-align: center;
+    }
+}
+
+.edit-plan-desk{
+    .edit-plan-desk-title{
+         border: 1px solid #E2E2E2;
+         margin-top: 12px;
+         margin-bottom: 20px;
+        .edit-plan-desk-top{
+           border-bottom: 1px solid #E2E2E2;
+           padding: 0 14px;
+           height:74px; 
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           align-items: center;
+           .edit-plan-desk-number{
+               font-size: 14px;
+               color: #4A4A4A;
+           }
+           .edit-plan-desk-status{
+               font-size: 12px;
+               color: #999999;
+           }
+           .edit-plan-desk-save{
+               width:72px; 
+               margin-right:10px; 
+               background-color:#4C80CF;
+               .add-save-icon{
+                 font-size: 12px;
+                 padding-right: 7px;
+               }
+           }
+           .edit-plan-desk-opration{
+               width: 72px;
+               padding: 0px;
+               vertical-align: top;
+               .anticon{
+                  margin-left: 0px;
+               }
+               span{
+                   display: inline-block;
+                   padding-left: 8px;
+               }
+           }
+        }
+        .edit-plan-desk-middle{
+            height:70px;
+            border-bottom: 1px solid #E2E2E2;
+            font-size: 12px;
+            color: #000000;
+            line-height: 70px;
+            padding-left:14px;
+            .edit-plan-desk-require{
+                color: #FE7A10;
+            }
+        }
+        .edit-plan-desk-bottom{
+            color:#4B4B4B;
+            font-size: 12px;
+            padding: 12px 0px 12px 32px;
+            .edit-plan-desk-bottom-top{
+                margin-bottom:12px; 
+            }
+            .edit-plan-desk-bottom-lable{
+                color: #999999; 
+            }
+        }
+    }
+}
+.edit-plan-dispatch-table{
+    .ant-dropdown-placement-bottomLeft{
+            .width-style{
+                width: 225px;
+            }
+        }
+    .custom-filter-dropdown{
+            padding: 8px;
+            border-radius: 6px;
+            background: #fff;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+             >.ant-form-item{
+                display: inline-block;
+            }
+        }
+        .custom-filter-dropdown input {
+            width: 130px;
+            height: 28px;
+            margin-right: 8px;
+        }
+       .custom-filter-dropdown button{
+            background-color: #4C80CF;
+            border-color: #4C80CF;
+        }
+        .highlight {
+            color: #f50;
+        }
+        .ant-dropdown-placement-bottomLeft{
+        width: 225px;
+    }
+     #custom-filter-dropdown-predictReceiveDate{
+            .ant-calendar-picker{
+                width: 196px !important;
+                display: inline-block !important;
+            }
+            span.ant-calendar-picker-input{
+                height: 26px;
+                padding: 0;
+            }
+            input.ant-calendar-range-picker-input{
+                width: 85px;
+                display: inline-block;
+                height: 26px;
+                line-height: 26px;
+            }
+            
+        }
+    .edit-plan-submitStatus{
+        .ant-select-lg .ant-select-selection--single{
+            height: 24px;
+        }
+        .ant-select-lg .ant-select-selection__rendered{
+            line-height: 24px;
+        }
+    }
+    .ant-table-filter-dropdown{
+            width:96px 
+        }
+      .ant-table-body{
+            .pl-materialCode{
+                >div,
+                >span{
+                    padding-left: 14px;
+                }
+            }
+        }
+    .title{
+        color: #000000;
+        font-size: 14px;
+        span{
+            color: #F04134;
+        }
+        margin-bottom: 12px;
+    }
+    .ant-table-thead > tr > th.ant-table-selection-column, .ant-table-tbody > tr > td.ant-table-selection-column{
+        text-align: center;
+        min-width: 50px;
+        width: 50px;
+     }
+    .ant-table-thead > tr > th:first-child {
+        padding-left: 0px;
+    }
+    .ant-table-tbody > tr > td:first-child {
+        padding-left: 0px;
+    }
+    .ant-form-item {
+      margin-bottom: 0px;
+    }
+    .ant-input-lg{
+        height: 24px;
+        padding-left: 8px;
+    }
+    .ant-form-item-control{
+        line-height: 24px;
+    }
+    .ant-table-thead > tr > .edit-plan-planMode:first-child {
+             padding-left: 4px;
+         }
+    .ant-table-tbody > tr > .edit-plan-planMode:first-child {
+             padding-left: 4px;
+        }
+}

@@ -1,0 +1,229 @@
+
+.direct-transfer-details{
+    $direct-transfer-details-header: #000;
+    $direct-transfer-details-content: #999;
+    $direct-transfer-details-title: #4a4a4a;
+    $direct-transfer-details-big: 14px;
+    $direct-transfer-details-default: 12px;
+    margin-top: 20px;
+    .public-title{
+        font-size: $direct-transfer-details-big;
+        color: $direct-transfer-details-title;
+        font-weight: normal;
+    }
+    .top{
+        position: relative;
+        border: 1px solid #E2E2E2;
+        padding: 22px 12px 18px 22px;
+        .header{
+            font-size: $direct-transfer-details-big;
+            color: $direct-transfer-details-header;
+            font-weight: normal;
+            padding-bottom: 5px;
+        }
+        .content{
+            color: $direct-transfer-details-content;
+            font-size: $direct-transfer-details-default;
+            .per-content{
+                margin-right:20px;
+            }
+        }
+        .return{
+            background-color: #4C80CF;
+            color: #fff;
+            height: 32px;
+            .c2mfont{
+                font-size:$direct-transfer-details-default;
+            }
+        }
+        .lay-top{
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            border:1px solid #e2e2e2;
+            border-radius:10px;
+            width:98px;
+            height:22px;
+            background-color: #fff;
+            text-align: center;
+            padding: 2px 0;
+            cursor: pointer;
+        }
+    }
+    .info{
+        .row-first{
+            border: 1px solid #E2E2E2;
+            border-top: none;
+            .col-left {
+                margin-top: 9px;
+                padding: 15px 0px 22px 18px;
+                .per-col {
+                    margin-top: 12px;
+                    .first-per-name {
+                        display: inline-block;
+                        width: 75px;
+                        text-align: right;
+                        color: $direct-transfer-details-content;
+                    }
+                }
+                border-right:1px solid #E2E2E2;
+            }
+            .col-right{
+                padding: 24px 12px 22px 18px;
+                .per-col {
+                    margin-top: 12px;
+                    .second-per-name {
+                        display: inline-block;
+                        width: 75px;
+                        text-align: right;
+                        color: $direct-transfer-details-content;
+                    }
+                }
+                .lay-aside{
+                    text-align: right;
+                    color:#4990e2;
+                    cursor: pointer;
+                    padding-top: 12px;
+                }
+            }
+        }
+        .row-second{
+            border: 1px solid #e2e2e2;
+            border-top: none;
+            padding: 20px 16px;
+            .info-remark{
+                width: 100%;
+                display: flex;
+                .first-name{
+                    display: inline-block;
+                    flex-direction: row;
+                    width: 75px;
+                    text-align: right;
+                    color:#999999;
+                }
+                .remark-content{
+                    flex: 1;
+                }
+            }
+        }
+    }
+    .table{
+        margin-top: 20px;
+        .ant-table-thead > tr > th:first-child,
+        .ant-table-tbody > tr > td:first-child{
+            padding-left: 0;
+            text-align: center;
+        }
+        .ant-table-tbody > tr > td:nth-child(6),
+        .ant-table-tbody > tr > td:nth-child(7),
+        .ant-table-tbody > tr > td:nth-child(8)
+        {
+            background-color: #FBF6E8;
+        }
+        .ant-table-tbody > tr > td:nth-child(9),
+        .ant-table-tbody > tr > td:nth-child(10),
+        .ant-table-tbody > tr > td:nth-child(11)
+        {
+            background-color: #EDF8FE;
+        }
+        .ant-table-thead > tr > th:nth-child(6),
+        .ant-table-tbody > tr > td:nth-child(6),
+        .ant-table-thead > tr > th:nth-child(9),
+        .ant-table-tbody > tr > td:nth-child(9),
+        .ant-table-thead > tr > th:nth-child(12),
+        .ant-table-tbody > tr > td:nth-child(12)
+        {
+            text-align: center;
+        }
+        .public-title{
+            padding-left: 18px;
+            padding-bottom: 7px;
+            font-weight: normal;
+        }
+    }
+    .remark{
+        padding-bottom:20px;
+        padding-left: 18px;
+        .content{
+            .per-remark{
+                padding-top: 10px;
+                color: $direct-transfer-details-header;
+                .time{
+                    padding-right: 10px;
+                    color:$direct-transfer-details-content;
+                }
+            }
+        }
+    }
+}
+
+.new-direct-transfer{
+    $blue-btn-color: #4C80CF;
+    $blue-default-color: #4a4a4a;
+    $direct-transfer-details-big: 14px;
+    .new-direct-transfer-top{
+        margin-top: 20px;
+        .top{
+            padding: 25px 13px 25px 10px;
+            border: 1px solid #EBEBEB;
+            border-radius: 2px;
+            .title{
+                font-size: 14px;
+                color: $blue-default-color;
+                margin-right: 10px;
+            }
+            .active{
+                color: $blue-btn-color;
+            }
+            .title:not(first-child){
+                margin-left: 10px;
+            }
+            .right{
+                text-align: right;
+                .btn{
+                    margin-left: 10px;
+                    border-color: $blue-btn-color;
+                    color: $blue-btn-color;
+                }
+                .btn:hover{
+                    color: #fff;
+                    background-color: $blue-btn-color;
+                }
+            }
+        }
+        .info{
+            .info-first{
+                padding: 17px 13px 20px 20px;
+                border: 1px solid #EBEBEB;
+                border-top: none;
+                .title{
+                    padding-bottom: 10px;
+                    font-size:$direct-transfer-details-big;
+                    color: $blue-default-color;
+                    h3{
+                        font-size: 14px;
+                        font-weight: normal;
+                    }
+                }
+                .form-itme{
+                    max-width: 400px;
+                    margin-bottom: 12px;
+                    .ant-calendar-picker{
+                        width: 100%;
+                    }
+                    .per-name{
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    .outInfo{
+        .outInfoTitle{
+            position: relative;
+            color: $blue-default-color;
+            top: 15px;
+            margin-left: 28px;
+        }
+    }
+}

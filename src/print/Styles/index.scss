@@ -1,0 +1,59 @@
+.temp {
+    display: flex;
+    justify-content: center;
+    >div:first-child {
+        width: 600;
+        .item {
+            padding-bottom: 40px;
+            border-bottom: 1px dashed #999;
+            h1 {
+                text-align: center;
+                text-decoration: underline
+            }
+            .text-info {
+                display: flex;
+                justify-content: space-between;
+                .left {
+                    flex: 1;
+                    .txt {
+                        line-height: 21px;
+                        display: flex;
+                        >div:first-child {
+                            width: 150px;
+                        }
+                        .pro {
+                            flex: 1;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+                .right {
+                    display: flex
+                }
+            }
+            table {
+                border-collapse: collapse;
+                text-align: center;
+                border: 1px solid black;
+                margin-top: 2px;
+            }
+            table,
+            td,
+            th {
+                border: 1px solid black;
+            }
+            tr {
+                height: 21px;
+            }
+            .footer {
+                float: right;
+                line-height: 21px;
+                padding-right: 8px;
+                >span:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.requirementsConfrim-con{
+    border-bottom:1px solid #e2e2e2;
+    position:relative;
+    margin-top:20px;
+    padding:0 22px 22px;
+    .ant-row{
+        margin-bottom: 8px;
+        i{
+            display: inline-block;
+            width:85px;
+            height:18px;
+            line-height: 18px;
+            font-style: normal;
+            color:#999999;
+            text-align: right;
+        }
+        span{
+            display: inline-block;
+            color:#4a4a4a;
+        }
+    }
+    
+}
+.requirementsConfrim-remark{
+    margin:12px 0;
+    border-bottom:1px solid #e2e2e2;
+    .ant-row{
+        margin:12px 23px 12px 45px;
+        .remark-title{
+            font-style: normal;
+            color:#999999;
+            text-align: right;
+            
+        }
+        // .remark-con{
+        //     display: inline-block;
+        //     color:#4a4a4a;
+        //     float:left;
+        // }
+    }
+}
+.requirementsUpdate-con{
+    .ant-row{
+        margin-bottom:12px;
+        s{
+            display: inline-block;
+            width:71px;
+            height:18px;
+            line-height: 18px;
+            font-style: normal;
+            color:#999999;
+            text-align:right;
+            text-decoration:none;
+            vertical-align: top;
+        }
+        b{
+            display: inline-block;
+            color:#4a4a4a;
+            text-overflow: ellipsis;    
+            overflow: hidden; 
+            white-space: nowrap; 
+            width:177px;
+            font-weight: normal;
+        }
+    }
+}
+.unitName{
+    .ant-select-arrow{
+        position: absolute;
+        top: 50%;
+        right: -80px;
+    }
+}
+.requirementsForm{
+    .ant-form-item {
+        margin-bottom: 10px;
+        margin-right: 20px;
+        display: flex;
+        > .ant-form-item-label {
+            min-width:92px;
+            line-height: 32px;
+            padding-right: 8px;
+        }
+    }
+    .ant-form-item:nth-of-type(3n+0){
+         margin-right: 0px;
+    }
+    .ant-form-item-control-wrapper {
+        flex: 1;
+        .ant-calendar-picker{
+            display: block;
+        }
+    }
+
+}

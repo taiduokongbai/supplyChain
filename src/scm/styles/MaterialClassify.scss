@@ -1,0 +1,239 @@
+.material-classify{
+
+    .ant-table-wrapper{
+        padding-bottom:30px;
+    }
+    .select-input-content{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding: 20px 0px;
+        .select-input{
+            width:200px;
+            height: 30px;
+            margin-right: 20px;
+            .ant-select-selection--single{
+                height: 30px;
+            } 
+        }
+
+        .selectForm{
+             display: flex;
+             flex-direction: row;
+             height: 30px;
+             .ant-form-item-control {
+                 font-size:0;
+             }
+            .select-get-input{
+                width: 200px;
+                height: 30px;
+            }
+            .option_status{
+                .ant-select-selection--single{
+                    height: 30px;
+                }
+            }
+            .searchBar{
+                margin-left: 17px;
+                height: 30px;
+                line-height: 1;
+                width: 72px;
+                padding: 0px;
+                color: #fff;
+                background-color: #4C80CF;
+                border-color: #4C80CF;
+                .search-icon{
+                    font-size: 10px;
+                    padding-right: 7px;
+                }
+             }
+             .searchBar:hover{
+                background: #fff;
+                color: #108ee9;
+             }
+         }
+        .newSet{
+            height:30px;
+            width: 72px;
+            position: absolute;
+            right: 0px;
+            color: #fff;
+            background-color: #4C80CF;
+            border-color: #4C80CF;
+            .newset-icon{
+                font-size: 10px;
+                padding-right: 7px;
+            }
+            
+        }
+        .newSet:hover{
+            background: #fff;
+            color: #108ee9;
+        }
+    }
+
+    /*.forbidden-checkbox{
+        font-size: 12px;
+        color: #4C80CF;
+        margin-bottom: 5px;   
+        .ant-checkbox  .ant-checkbox-inner,
+        .ant-checkbox-checked .ant-checkbox-inner{
+            border-color: #4C80CF;
+        }
+        .ant-checkbox-checked .ant-checkbox-inner:after{
+            border-color: #4C80CF;
+        }
+
+    }*/
+
+    .material-classify-table{
+        .ant-table-tbody, // 行号、操作列居中
+            .ant-table-thead{
+                >tr{
+                    .table-thead-center{    //td
+                        text-align: center;
+                        >div{
+                            text-align: center;
+                            color: #4a4a4a;
+                        }
+                        // 预收货
+                        .iconstyle{
+                            cursor: pointer;
+                            border: 1px solid #9d9d9d;
+                            color: #4a4a4a;
+                            border-radius: 50%;
+                            font-size: 16px;
+                            width: 18px;
+                            height: 18px;
+                            line-height: 18px;
+                            text-align: center;
+                            display: inline-block;
+                            vertical-align: bottom;
+                            margin-right: 10px;
+                        }
+
+                        .iconstyle:hover{
+                            background-color: #5284d1;
+                            color: #fff;
+                            border: 1px solid #5284d1;
+                            font-size: 12px;
+                        }
+
+                        .c2m-shanchu{
+                            font-size: 16px;
+                        }
+
+                        .c2m-shanchu:hover{
+                            font-size: 16px;
+                        }
+
+                        span{
+                            display: inline-block;
+                        }
+
+                        span.no-icon{
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 10px;
+                        }
+
+                    }
+
+                }
+            }
+            .ant-table-tbody>tr>td.table-thead-center>div{
+                padding-left: 8px;
+            }
+    }
+}
+
+.details-modal{
+    top:50%;
+    margin-top: -99px;
+    .ant-modal-header{
+        padding: 0 0;
+        background-color: #fff;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .ant-modal-body{
+        padding: 21px 42px;
+    }
+    .details-modal-title{
+        height: 50px;
+        line-height: 50px;
+        display: flex;
+        justify-content: flex-start;
+        span{
+            display: inline-block;
+        }
+        span.details-categorycode{
+            margin-right: 20px;
+            font-size: 14px;
+            color: #4A4A4A;
+            letter-spacing: 0;
+        }
+        span.details-orderStatus{
+            font-size: 12px;
+            color: #9b9b9b;
+        }
+    }
+
+    .details-body-info{
+        display: flex;
+        justify-content: space-between;
+        .details-body-info-left{
+            display: flex;
+            flex-direction: column;
+            p{
+                font-size: 12px;
+                color: #4a4a4a;
+                font-weight: 100;
+                margin-bottom: 10px;
+                width: 200px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                span{
+                    text-align: right;
+                    display: inline-block;
+                    width: 86px;
+                    color: #9b9b9b;
+                }
+            }
+        }
+        .details-body-info-right{
+            display: flex;
+            flex-direction: column;
+            p{
+                font-size: 12px;
+                color: #4a4a4a;
+                font-weight: 100;
+                margin-bottom: 10px;
+                width: 200px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                span{
+                    text-align: right;
+                    display: inline-block;
+                    width: 62px;
+                    color: #9b9b9b;
+                }
+            }
+        }
+    }
+
+    .details-remarks{
+        display: flex;
+        justify-content: flex-start;
+        p:first-child{
+            width: 86px;
+            text-align: right;
+            color: #9b9b9b;
+        }
+        p:last-child{
+            width: 350px;
+            word-wrap: break-word;
+        }
+    }
+}

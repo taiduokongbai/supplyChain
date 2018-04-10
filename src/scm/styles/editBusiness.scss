@@ -1,0 +1,23 @@
+.editBusiness-cont{
+    .editBusiness-title{
+        padding-top: 15px;
+        .c2m-baocun{
+            font-size: 10px;
+            margin-right: 6px;
+        }
+    }
+    .editBusiness-form{
+        border: 1px solid #e2e2e2;
+        border-top: none;
+        padding-bottom: 20px;
+        .businessItemTitle{
+            line-height: 24px;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 10px 0;
+        }
+        .ant-form-item{
+            margin-bottom: 16px;
+        }
+    }
+}

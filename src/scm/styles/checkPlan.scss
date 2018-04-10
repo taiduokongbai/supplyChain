@@ -1,0 +1,302 @@
+.check-plan{
+    table{
+        >thead, tbody{
+            tr{
+                .table-operation-center{
+                    text-align: center;
+                    .base-operations{
+                        i{
+                            font-size: 16px;
+                            width: 18px;
+                            height: 18px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .ant-table-tbody{
+            .table-operation-center{
+                padding-left: 8px;
+            }
+        }
+    }
+}
+// 新建/编辑modal
+.check-plan-modal{
+    .ant-row{
+        .solution-code{
+            .ant-form-item-control-wrapper{
+                .ant-form-item-control{
+                    input{
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+    >.ant-row.ant-form-item:nth-child(3){  // modal -- 是否盲盘
+        display: flex;
+        justify-content: flex-end;
+        .ant-form-item-control-wrapper{
+            width: 75%;
+        }
+    }
+    >.ant-row:nth-child(3){   
+        .ant-col-6:nth-child(3){
+            .ant-row.ant-form-item{
+                .ant-form-item-label{
+                    >label::after{
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
+    .ant-checkbox-group{
+        padding-left: 50px;
+    }
+}
+// 盘点方案详情
+.check-plan-details{
+    margin-top: 12px;
+    .details-head{
+        background:#ffffff;
+        border:1px solid #e2e2e2;
+        height:58px;
+        line-height: 58px;
+        padding-left: 16px;
+        padding-right: 20px;
+        font-size:14px;
+        color:#4a4a4a;
+        letter-spacing:0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .details-solutionCode{
+            p{
+                >span:nth-child(1){
+                    display: inline-block;
+                    width: 65px;
+                }
+            }
+        }
+        .details-pushdown-btn{
+            .ant-btn{
+                border-color: #4c80cf;
+                background-color: #4c80cf;
+            }
+        }
+    }
+    .details-body{
+        background:#ffffff;
+        border:1px solid #e2e2e2;
+        border-top: 0;
+        padding: 20px 97px 20px 16px;
+        .basic-info-title{
+            font-size:14px;
+            color:#4a4a4a;
+            letter-spacing:0;
+            line-height:14px;
+            text-align:left;
+        }
+        .details-body-infos{
+            .ant-row:nth-child(1){
+                .ant-col-8{
+                    p{
+                        margin-top: 16px;
+                        font-size: 12px;
+                        >span:nth-child(1){
+                            color:#999999;
+                            display: inline-block;
+                            width: 60px;
+                            text-align: right;
+                        }
+                        >span:nth-child(2){
+                            color:#4a4a4a;
+                            display: inline-block;
+                            margin-left: 5px;
+                        }
+                        //checkbox
+                        .ant-checkbox-wrapper{
+                            .ant-checkbox.ant-checkbox-checked{
+                                .ant-checkbox-inner{
+                                    background-color: #fff;
+                                    border-color: #999;
+                                }
+                                .ant-checkbox-inner::after{
+                                    border: 2px solid #999;
+                                    transform: rotate(45deg) scale(1);
+                                    position: absolute;
+                                    left: 4px;
+                                    top: 1px;
+                                    display: table;
+                                    width: 5px;
+                                    height: 8px;
+                                    border: 2px solid #999;
+                                    border-top: 0;
+                                    border-left: 0;
+                                    content: ' ';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            >.ant-row:nth-child(2){
+                margin-top: 16px;
+                .ant-col-1{
+                    width: 60px;
+                    text-align: right;
+                    color:#999999;
+                }
+                .ant-col-23{
+                    padding-left: 5px;
+                }
+                >div:nth-child(1){
+                    width: 60px;
+                    float: left;
+                    text-align: right;
+                    color: #999;
+                }
+                >p{
+                    margin-top: 0;
+                    float: left;
+                    max-width: 879px;
+                    word-wrap:break-word ;
+                }
+            }
+
+        }
+    }
+}
+
+//盘点差异报告详情
+.variance-report-details{
+    margin-top: 20px;
+    .report-head{
+        background:#ffffff;
+        border:1px solid #e2e2e2;
+        display: flex;
+        flex-direction: row;
+        padding-left: 16px;
+        padding-right: 20px;
+        justify-content: space-between;
+        height: 86px;
+        .report-head-info{
+            padding: 20px 0px;
+            >div:nth-child(1){
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                p{
+                    font-size:14px;
+                    color:#000000;
+                    letter-spacing:0;
+                    text-align:left;
+                    font-weight: bold;
+                }
+                p:nth-child(2){
+                    margin: 0 10px;
+                }
+            }
+            >div:nth-child(2){
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 5px;
+                p{
+                    font-size:12px;
+                    color:#999999;
+                    letter-spacing:0;
+                    text-align:left;
+                }
+                p:nth-child(2){
+                    margin: 0 20px;
+                }
+            }
+        }
+        .report-head-btn{
+            line-height: 86px;
+            .ant-btn-primary{
+                border-color: #4c80cf;
+                background-color: #4c80cf;
+            }
+        }
+    }
+
+    .plan-details{
+        padding: 20px 30px 20px 17px;
+        border: 1px solid  #e2e2e2;
+        border-top: 0;
+        >p{
+            font-size:14px;
+            color:#4a4a4a;
+            line-height: 14px;
+            font-weight: bold;
+        }
+        .plan-details-info{
+            >div.ant-col-8{
+                p{
+                    margin-top: 15px;
+                    span:nth-child(1){
+                        display: inline-block;
+                        width: 60px;
+                        color: #999;
+                        text-align: right;
+                    }
+                }
+            }
+            >div.ant-col-8:nth-child(3){
+                >div:nth-child(1){
+                    width: 60px;
+                    float: left;
+                    text-align: right;
+                    color: #999;
+                }
+                >p{
+                    margin-top: 0;
+                    float: left;
+                    max-width: 324px;
+                    word-wrap:break-word ;
+                }
+            }
+        }
+    }
+
+    .report-materialList{
+        margin-top: 20px;
+        >div{
+            p{
+                height: 28px;
+                line-height: 28px;
+                font-size:14px;
+                color:#4a4a4a;
+                letter-spacing:0;
+                text-align:left;
+                font-weight: bold;
+                float: left;
+            }
+            .report-materialList-select{
+                float: right;
+                width: 72px;
+            }
+        }
+        .ant-table-body{
+            .ant-table-thead{
+                tr{
+                    th:first-child{
+                        text-align: center;
+                    }
+                }
+            }
+            .ant-table-tbody{
+                tr{
+                    td:first-child{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

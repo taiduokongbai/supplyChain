@@ -1,0 +1,90 @@
+.material-glg{
+    .addMaterialUintConversion{
+        width: 700px
+    }
+    .column-hidden{
+      display: none;
+    }
+}
+.uintconversion{
+    .uintconversion-formitem1{
+        // margin-right: 10px;
+        float: right;
+        width: 92%;
+    }
+    .uintconversion-formitem{
+      margin-right: 5px;
+      float: right;
+      width: 83%;
+  }
+  .uintconversion-formitem2{
+    margin-right: 5px;
+    float: right;
+    width: 92%;
+  }
+  .uintconversion-zhuanhuan{
+    margin-top: 4px;
+    display: inline-block;
+  }
+    .ant-form-item-required{
+      position: relative;
+      top: 15%;
+    }
+    .uintconversion-col1{
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+    .add-line{
+        height: 1px;
+        width: 100%;
+        background-color: #e7e8ea;
+        position: relative;
+        margin-top: 16px;
+        .add{
+          position: absolute;
+          top: -10px;
+          background-color: #fff;
+          left: 20px;
+          padding: 0 5px
+        }
+      }
+      .group-line{
+        height: 1px;
+        background-color: #e7e8ea;
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+      .delete{
+        margin: 5px 0;
+        text-align: right;
+        padding-left: 10px;
+        .c2mfont{
+          margin-right: 5px;
+          font-size: 14px;
+          color: #4c80cf;
+        }
+      }
+      .material-uint-add{
+        display: inline-flex;
+      }
+      .material-uint-addRow{
+        width: 90%;
+      }
+      .ant-col-6{
+        display: block;
+        width: 24%;
+      }
+      .ant-col-7{
+        display: block;
+        width: 28%;
+      }
+      .base-search-bar{
+        padding: 0 20px;
+      }
+      .table-tooltip {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+}

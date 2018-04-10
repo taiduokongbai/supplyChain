@@ -1,0 +1,114 @@
+@import "./main.scss";
+@import "./Import.scss";
+@import "./business.scss";
+@import "./businessPartner.scss";
+@import "./editBusiness.scss";
+@import "./customer.scss";
+@import "./supplier.scss";
+@import "./supplierAddress.scss";
+@import "./supplierBase.scss";
+@import "./customerBase.scss";
+@import "./addPurchaseOrder.scss";
+@import "./purchaseView.scss";
+@import "./purchaseReturnViewComp.scss";
+@import "./production.scss";
+@import "./tableEdit.scss";
+@import "./addProducRec.scss";
+@import "./addPurRetOrder.scss"; //采购退货单新增
+//物料
+@import "./material.scss";
+//物料-新版
+@import "./material-glg.scss";
+@import "./materialAddComp.scss";
+@import "./materialDetailComp.scss";
+//物料单位换算
+@import "./MaterialUintConversion.scss";
+//bom
+@import "./linkInputComp.scss";
+@import "./bomAddtable.scss";
+@import "./bomDetail.scss";
+@import "./bomComp.scss";
+@import "./TableBomComp.scss";
+@import "./BomAddTableComp.scss";
+//销售订单
+@import "./saleOrderForm";
+@import "./SaleOrderSearchComp";
+@import "./saleOrderDetail.scss";
+@import "./SaleOrderFormComp.scss";
+@import "./SaleOrderTableComp.scss";
+@import './SaleOrderAddTableDialogComp.scss';
+@import 'salePriceAddTableDialogComp';
+//销售价格清单
+@import './salePriceAddComp.scss';
+@import 'salePriceDetailComp';
+@import './saleAddLineDialogComp.scss';
+//销售退货订单
+@import "./SaleReturn.scss";
+//生产退料订单
+@import "./productionReturnView.scss";
+//其他出库
+@import "otherOutboundOrderAddCont";
+@import "directTransfer.scss";
+//采购价格清单
+@import "./addPurchasePrice.scss";
+//物料分类
+@import "./MaterialClassify.scss";
+@import "./MaterialClassifyDialog.scss";
+@import "./checkworkSheet.scss"; //盘点作业单
+// 盘点方案
+@import "./checkPlan.scss";
+@import "./addSaleDeliveryNotice";
+@import "./SaleDeliveryNoticeView";
+@import "./addPurRecNotice";
+@import "./PurRecNoticeView";
+//库存
+@import "./purchaseList.scss";
+@import "./addPurchaseList.scss";
+@import "./saleCarryOut.scss";
+@import "./purchaseEidtScss.scss";
+@import "./purchaseSide.scss";
+@import "./salesStoreHouse";
+@import "./newSalesStoreHouse";
+@import "./instantInventory.scss";
+@import "./inventoryBreakdown.scss";
+@import "./instantsidebarwarp.scss";
+@import "./salesOutboundDetails.scss";
+@import "./storage";
+@import "./ReceiptDetails.scss";
+@import "./PurchaseReturnOutboundDetails";
+@import "./ProductIssueOutboundDetails";
+@import "./otherWarehouseCarryOut.scss";
+@import "./otherOutboundOrder";
+@import "./addOtherWareHousePage.scss";
+@import "./addOhterWareHousePageDialogList.scss";
+@import "./AdjustMentDetails.scss"; //库存调整单详情
+@import "./inventoryAdjustmentAdd";
+@import "./storageBinList.scss"; //仓位
+@import "./wareHouse.scss"; //仓库
+@import "./supplierGoods";
+@import "./addAllot";
+@import "./editReceiptConfirm.scss"; //收货确认单
+@import "./receiptConfirmView.scss"; //收货确认单详情
+@import "./requirements.scss"; //采购需求单
+@import "./selfMadeIn.scss";
+@import "./MaterialAvailabilityCheck.scss";
+@import "./materialAvailabilityCheckConfig.scss";
+
+@import "./editplanDispatch.scss";//计划单详情
+@import "./AddPlanDispatch.scss"; // 新建计划单
+@import "./ProDesignBom.scss";//产品设计BOM
+.temp-container {
+    height: 500px;
+    display: block;
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.temp-container-item {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s ease-in-out;
+    width: 80px;
+    display: inline-block;
+    cursor: -webkit-grab;
+    display: inline-block;
+}

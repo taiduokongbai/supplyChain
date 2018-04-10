@@ -1,0 +1,71 @@
+.saleprice-BaseInfo{
+  .viewbtn{
+    .ant-btn-ghost{
+      .anticon {
+        margin-left: 0;
+      }
+    }
+    .select-btn{
+      width: 72px;
+      height: 30px;
+      padding: 0;
+    }
+  }
+  .show-or-hide {
+    display: block;
+    width: 100px;
+    height: 20px;
+    padding: 0 10px;
+    position: absolute;
+    top: 71px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    color: #999999;
+    background: #ffffff;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    z-index: 999;
+  }
+  .detail-title{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .default-btn {
+    color: #fff;
+    background-color: #4c80cf;
+    border-color: #4c80cf;
+  }
+  .default-btn:hover{
+    background: #fff;
+    color: #108ee9;
+  }
+  .saleprice-conventionalBase{
+    position: relative;
+    .left-content{
+      display: inline-block;
+      width: 60%;
+      height: 100%;
+      border-right: 1px solid #e2e2e2;
+    }
+    .right-content{
+      display: inline-block;
+      width: 40%;
+      height: 100%;
+      .remark{
+        margin-left: -17px;
+        position: absolute;
+        top: -38px;
+      }
+
+      .remark-content{
+        padding-bottom: 10px;
+        word-wrap:break-word;
+        width:80%;
+      }
+    }
+
+  }
+}

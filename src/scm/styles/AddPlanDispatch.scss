@@ -1,0 +1,274 @@
+$planDistribution: "planDistribution";
+
+.planned-distribution{
+    .#{$planDistribution}-header{
+        padding: 19px 15px 16px 15px;
+        background: #FFFFFF;
+        border: 1px solid #E2E2E2;
+        height: 74px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        >div:nth-of-type(1){
+            display: flex;
+            flex-direction: column;
+            span{
+                display: inline-block;
+            }
+            span:nth-child(1){
+                font-size: 14px;
+                color: #4A4A4A;
+            }
+            span:nth-child(2){
+                font-size: 12px;
+                color: #999999;
+            }
+        }
+        >div:nth-of-type(2){
+            line-height: 37px;
+            .save-btn{
+                border: 1px solid #4C80CF;
+                border-radius: 4px;
+                background: #4C80CF;
+            }
+            .save-btn:disabled{
+                background: #F7F7F7;
+                border: 1px solid #E2E2E2;
+                border-radius: 4px;
+            }
+        }
+        >div:nth-of-type(3){
+            ul.ant-dropdown-menu{
+                .ant-dropdown-menu-item{
+                    .submit-btn{
+                        width: 100%;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    .#{$planDistribution}-wrap{
+        height: 70px;
+        line-height: 30px;
+        padding: 20px 16px;
+        display: flex;
+        flex-direction: row;
+        background: #FFFFFF;
+        border: 1px solid #E2E2E2;
+        border-top: 0;
+        .ant-form-horizontal{
+            display: inline-block;
+            width: 285px;
+            .ant-input-affix-wrapper input{
+                cursor: pointer;
+            }
+        }
+        >div{
+            display: inline-block;
+            margin-left: 20px;
+            font-size: 12px;
+            >span{
+                color: #999;
+                >span{
+                    color: #4a4a4a;
+                }
+            }
+        }
+    }
+
+    .#{$planDistribution}-info{
+        height: 70px;
+        background: #FFFFFF;
+        border: 1px solid #E2E2E2;
+        border-top: 0;
+        padding-left: 35px;
+        padding-top: 11px;
+        .ant-col-8{
+            font-size: 12px;
+            >p:nth-of-type(2){
+                margin-top: 12px;
+            }
+            >p{
+                color: #4B4B4B;
+                span{
+                    display: inline-block;
+                    width: 60px;
+                    color: #999999;
+                }
+            }
+        }
+        .ant-col-8:nth-of-type(3){
+            >p{
+                color: #4B4B4B;
+                span{
+                    display: inline-block;
+                    width: 84px;
+                    color: #999999;
+                }
+            }
+        }
+    }
+
+    .#{$planDistribution}-plan-amount{
+        padding: 20px 0;
+        display: flex;
+        >div.ant-form-item{
+            margin-bottom: 0px;
+            input{
+                height: 30px;
+                color: #4a4a4a;
+                border: 1px solid #E2E2E2;
+            }
+            label.ant-form-item-required::before{
+                content: '';
+            }
+        }
+        >.ant-btn{
+            height: 29px;
+            margin-left: 20px;
+            margin-top: 1px;
+            background: #4C80CF;
+            border-radius: 4px;
+        }
+        >.ant-btn:disabled{
+            background: #F7F7F7;
+            border: 1 solid #E2E2E2;
+            border-radius: 4px;
+        }
+    }
+
+    .#{$planDistribution}-letter{
+        font-size: 14px;
+        color: #000000;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+
+    .#{$planDistribution}-letter::before{
+        display: inline-block;
+        margin-right: 4px;
+        content: "*";
+        font-family: SimSun;
+        line-height: 1;
+        font-size: 12px;
+        color: #f04134;
+    }
+
+    .#{$planDistribution}-pd-table{
+        .custom-filter-dropdown{
+            padding: 8px;
+            border-radius: 6px;
+            background: #fff;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+            >.ant-form-item{
+                display: inline-block;
+            }
+        }
+        .custom-filter-dropdown input {
+            width: 130px;
+            height: 30px;
+            margin-right: 8px;
+        }
+
+        .custom-filter-dropdown button{
+            background-color: #4C80CF;
+            border-color: #4C80CF;
+        }
+
+        .highlight {
+            color: #f50;
+        }
+
+        .ant-dropdown-placement-bottomLeft{
+            .width-style{
+                width: 225px;
+            }
+        }
+        
+        #custom-filter-dropdown-predictReceiveDate{
+            .ant-calendar-picker{
+                width: 250px;
+                display: inline;
+            }
+            span.ant-calendar-picker-input{
+                height: 26px;
+                padding: 0;
+            }
+            input.ant-calendar-range-picker-input{
+                width: 110px;
+                display: inline-block;
+                height: 26px;
+                line-height: 26px;
+            }
+            
+        }
+
+        .ant-table-body{
+            .pd-table-materialCode{
+                >div,
+                >span{
+                    padding-left: 14px;
+                }
+            } 
+            .planMode{
+                padding-left: 5px;
+            }
+        }
+
+        .ant-table-fixed-left{
+            .ant-table-fixed{
+                .ant-table-thead,
+                .ant-table-tbody{
+                    .ant-table-selection-column{
+                        padding-left: 0;
+                    }
+                    >tr{
+                        .planMode{
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .ant-table-fixed-right{
+            .ant-table-fixed{
+                .ant-table-thead,
+                .ant-table-tbody{
+                    >tr{
+                        .planMode{
+                            padding-left: 5px;
+                            .ant-select-selection{
+                                height: 26px;
+                                >div{
+                                    line-height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ant-input-lg{
+                    height: 26px;
+                }
+            }
+        }
+    }
+}
+
+.#{$planDistribution}-saleOrderList{
+    .ant-modal-body{
+        padding: 0 20px;
+    }
+}
+
+.#{$planDistribution}-datepicker-dialog{
+    .ant-col-7{
+        text-align: right;
+        margin-right: 10px;
+        line-height: 30px;
+        font-size: 12px;
+        color: #4A4A4A;
+    }
+}

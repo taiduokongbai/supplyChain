@@ -1,0 +1,8 @@
+
+.ware-house-list{
+  .ant-table-thead > tr > th:last-child,
+  .ant-table-tbody > tr > td:last-child {
+    padding-left: 0;
+    text-align: center;
+  }
+}

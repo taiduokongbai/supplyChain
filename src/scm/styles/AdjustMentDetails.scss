@@ -1,0 +1,43 @@
+.adjust-receipt-details-box{
+    .adjust-receipt-info{
+        height: 80px;
+        padding: 18px 0px 26px 16px;
+        border: 1px solid #E2E2E2;
+        margin-top: 12px;
+        .adjust-receipt-choose-order{
+           font-size: 14px;
+           font-weight: bold;
+           color:#000000; 
+        }
+        .adjust-receipt-info-list{
+            p{
+                display: inline-block;
+                font-size: 12px;
+                color: #999999;
+            }
+            .adjust-belong-warehouse{
+                margin-right: 20px;
+            }
+        }
+    }
+    .adjust-receipt-details-info-list{
+        // height: 56px;
+        border: 1px solid #E2E2E2;
+        border-top:none;
+        padding: 22px 0px 20px 40px;
+        margin-bottom: 20px;
+       p{
+          display: inline-block;
+          margin-right: 70px;
+          .adjust-receipt-size-lable{
+              color: #9B9B9B;
+          }
+          .adjust-choose-reason{
+              display: inline-block;
+              width: 542px;
+              word-break: break-all;
+              vertical-align: top;
+          }
+       }
+    }
+}

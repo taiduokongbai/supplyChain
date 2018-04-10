@@ -1,0 +1,36 @@
+// 编辑物料分类
+.material-classify-dialog{
+    .ant-modal-body{
+        .ant-form-item{
+            margin-bottom: 12px;
+            .ant-form-item-label{
+                label{
+                    font-size: 12px;
+                    color: #9B9B9B;
+                }
+            }
+            .ant-form-item-control-wrapper{
+                .edit-dialog-disable-input{
+                    border: 0;
+                    background-color: #fff;
+                    color: rgba(0,0,0,0.65)
+                }
+            } 
+        }
+
+        /*.forbidden-checkbox{
+            font-size: 12px;
+            color: #4C80CF;
+            margin-bottom: 5px;   
+            .ant-checkbox  .ant-checkbox-inner,
+            .ant-checkbox-checked .ant-checkbox-inner{
+                border-color: #4C80CF;
+            }
+            .ant-checkbox-checked .ant-checkbox-inner:after{
+                border-color: #4C80CF;
+            }
+
+        }*/
+           
+    }
+}

@@ -1,0 +1,116 @@
+.material-wrap{
+    .material-header {
+        // padding: 12px 12px 0px 12px;
+        margin-top: 12px;
+        .material-head-border{
+        border: 1px solid #e2e2e2;
+        height: 60px;
+        // line-height: 60px;
+        // padding: 22px 20px 22px 16px;
+      }
+    }
+      .material-header-title {
+        margin-left: 16px;
+        font-size: 14px;
+        color: #4a4a4a;
+        position: relative;
+        top: 19px;
+      }
+      .default-btn {
+        color: #fff;
+        background-color: #4c80cf;
+        border-color: #4c80cf;
+      }
+      .default-btn:hover{
+        background: #fff;
+        color: #108ee9;
+      }
+      .save {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+    .material-body-border{
+      border-right: 1px solid #e2e2e2;
+      border-left: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e2e2e2;
+    }
+    .material-baseInfo{
+      margin-bottom: 14px;
+      font-size: 14px;
+      color: #4a4a4a;
+      padding-left: 15px;
+      padding-top: 20px;
+      .material-form-baseInfo{
+        // margin-left: 16px;
+      }
+      
+    }
+    .material-body-top{
+      border-bottom: 1px solid #e2e2e2;
+      .show-more-info {
+        position: relative;
+        right: 12px;
+        bottom: 25px;
+        float: right;
+    }
+    }
+    .material-head-left {
+      display: inline-block;
+      padding-top: 12px;
+      padding-left: 16px;
+    }
+    .material-head-h1 {
+      font-size: 14px;
+      color:#4a4a4a;
+      padding-bottom: 12px;
+    }
+    .material-head-h1, .material-head-h {
+      display: block;  
+    }
+    .material-head-h{
+      font-size: 12px;
+      color:#999999;
+      .material-head-strong-blue{
+        padding-right: 5px;
+      }
+      .material-head-strong-blue{
+        padding-right: 5px;
+        font-size: 12px;
+        color:#4c80cf;
+      }
+      .material-head-strong-red{
+        padding-right: 5px;
+        font-size: 12px;
+        color:#f66666;
+      }
+    }
+
+
+    .basetitle{
+      font-size: 14px;
+      display: inline-block;
+      margin-bottom: 5px;
+      margin-left: 20px;
+      margin-top: 20px;
+      font-weight: bold;
+  }
+  .Material-SmallTitle{
+    width: 95%;
+     height: 24px;
+     font-size: 12px;
+     margin: -6px 0px 10px 20px;
+     span{
+         color: #999999;
+     }
+     .qiyong{
+         color: #417505;    
+     }
+     .baocun{
+         color: #4C80CF;
+     }
+     .jinyong{
+          color: #D0011B;
+     }
+  }
+}

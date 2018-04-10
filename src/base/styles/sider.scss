@@ -1,0 +1,230 @@
+@mixin beforeVertical {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-left: 4px solid #108ee9;
+    -webkit-transform: scaleY(.0001);
+    -ms-transform: scaleY(.0001);
+    transform: scaleY(.0001);
+    opacity: 0;
+    -webkit-transition: opacity .15s cubic-bezier(.215,.61,.355,1),-webkit-transform .15s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .15s cubic-bezier(.215,.61,.355,1),-webkit-transform .15s cubic-bezier(.215,.61,.355,1);
+    transition: transform .15s cubic-bezier(.215,.61,.355,1),opacity .15s cubic-bezier(.215,.61,.355,1);
+    transition: transform .15s cubic-bezier(.215,.61,.355,1),opacity .15s cubic-bezier(.215,.61,.355,1),-webkit-transform .15s cubic-bezier(.215,.61,.355,1);
+}
+@mixin beforeSelected {
+    -webkit-transition: opacity .15s cubic-bezier(.645,.045,.355,1),-webkit-transform .15s cubic-bezier(.645,.045,.355,1);
+    transition: opacity .15s cubic-bezier(.645,.045,.355,1),-webkit-transform .15s cubic-bezier(.645,.045,.355,1);
+    transition: transform .15s cubic-bezier(.645,.045,.355,1),opacity .15s cubic-bezier(.645,.045,.355,1);
+    transition: transform .15s cubic-bezier(.645,.045,.355,1),opacity .15s cubic-bezier(.645,.045,.355,1),-webkit-transform .15s cubic-bezier(.645,.045,.355,1);
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.ant-tooltip.ant-menu-inline-collapsed-tooltip{
+    .ant-tooltip-content{
+        .ant-tooltip-arrow{
+            border-right-color: #FFF;
+        }
+        .ant-tooltip-inner{
+            background-color: #FFF;
+            color: rgba(0, 0, 0, 0.65);
+        }
+    }
+}
+.#{$prefix-cls}-layout {
+    .sider-content{
+        padding-top: 49px;
+    }
+    &-sider{
+        background-color: #FFFFFF;
+        .ant-menu{
+            .ant-menu-item {
+                border-right: none;
+                border-bottom: 1px solid #F3F3F3;
+            }
+            .ant-menu-submenu-title {
+                border-bottom: 1px solid #F3F3F3;
+            }
+            .ant-layout-sider-collapsed {
+                overflow-y: initial;
+            }
+
+        }
+        .ant-menu-inline-collapsed .ant-menu-submenu-title >span .c2mfont+span{
+            max-width: 0;
+            display: inline-block;
+            opacity: 0;
+        }
+        // .ant-menu-vertical .ant-menu-submenu-title:after {
+        //     display: none;
+        // }
+        .ant-menu-sub{
+            .ant-menu-item,
+            .ant-menu-submenu-title {
+                border-bottom-color: transparent;
+            }
+        }
+        .ant-layout-sider-trigger {
+            position: absolute;
+            z-index: 9;
+            bottom: auto;
+            top: 0px;
+            background: #FFFFFF;
+            color: #333;
+            border-bottom: solid 1px #F2F2F2;
+            height: 49px;
+            line-height: 49px;
+            position: absolute;
+        }
+    }
+
+}
+.ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-item{
+    margin-left: 0px;
+    left: 0px;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+    background-color: transparent;
+}
+.ant-menu-sub.ant-menu-inline{
+    background-color: #f2f3f5;
+}
+.ant-menu-inline .ant-menu-item:after, .ant-menu-vertical .ant-menu-item:after{
+    border-right-color: rgba(0, 0, 0, 0);
+}
+//没有子菜单的选中样式
+.menu-root-one{
+    padding-left: 11px !important;
+    &:before{
+        @include beforeVertical;
+    }
+    &.ant-menu-item-selected{
+        background-color: #FFFFFF;
+    }
+    &.ant-menu-item-selected:before{
+        @include beforeSelected;
+    }
+}
+
+//有子菜单的选中样式
+.ant-menu-root{
+    >.ant-menu-submenu{
+        >.ant-menu-submenu-title{
+            &::before{
+                @include beforeVertical;
+            }
+        }
+    }
+    >.ant-menu-submenu-selected{
+        >.ant-menu-submenu-title{
+            color: hsl(205, 87%, 49%);
+            &::before{
+                @include beforeSelected;
+            }
+        }
+    }
+}
+
+
+
+//二级
+.ew-layout-sider{
+    .sider-content{
+        >.ant-menu{
+            >.ant-menu-submenu{
+                >ul.ant-menu-sub{
+                    >.ant-menu-item{
+                        padding-left: 45px !important;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+///ant-menu-submenu-selected
+.ew-layout-sider .sider-content>.ant-menu-inline {
+    >.ant-menu-submenu {
+        >.ant-menu-submenu-title{
+            padding-left: 11px !important;
+        }
+
+        >.ant-menu-inline {
+            position: relative;
+
+            //-------------二级 start ----------
+            >.ant-menu-submenu-inline.ant-menu-submenu-selected,
+            >.ant-menu-item.ant-menu-item-selected {
+                color: #2d78cf !important;
+                &::before {
+                    border: 1px solid #4990e2;
+                    background: #4990e2;
+                }
+            }
+
+            >.ant-menu-submenu-inline{
+                .ant-menu-submenu-title{
+                    //background-color: red;
+                    padding-left: 45px !important;
+                }
+            }
+
+
+            >.ant-menu-submenu-inline,
+            >.ant-menu-item {
+                color: #4b4b4b;
+                background: rgba(243, 243, 244, 0.42);
+                &:hover {
+                    color: #4b4b4b;
+                    background: rgba(213, 214, 216, 0.30);
+                }
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    left: 35px !important;
+                    top: 19px;
+                    border-radius: 6px;
+                    border: 1px solid #9b9b9b;
+                }
+            }
+            //-------------二级 end ----------
+            //-------------三级 start ----------
+
+            >.ant-menu-submenu-inline {
+
+
+
+
+                >.ant-menu-inline {
+                    .ant-menu-item {
+                        //background-color: red;
+                        padding-left: 59px !important;
+                        //background: rgba(243, 243, 244, 0.42);
+                        color: #9b9b9b;
+                        &:hover {
+                            background: rgba(213, 214, 216, 0.30);
+                            color: #9b9b9b;
+                        }
+                    }
+                    >.ant-menu-selected,
+                    >.ant-menu-item-selected {
+                        background: rgba(174, 203, 237, 0.30) !important;
+                        color: #4990e2 !important;
+                    }
+                }
+            }
+            //-------------三级 end ----------
+        }
+    }
+}

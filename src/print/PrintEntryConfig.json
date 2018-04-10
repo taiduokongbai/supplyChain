@@ -1,0 +1,5 @@
+{
+    "title": "PRINT",
+    "filename": "print.html",
+    "template": "./src/template/print.html"
+}

@@ -1,0 +1,240 @@
+$selfMadeIn: "selfMadeIn";
+//列表
+.saleNotice-list { 
+    .ant-table-tbody,
+    .ant-table-thead{
+        >tr{
+            .saleNotice-list-operation{
+                text-align: center;
+            }
+        }
+        .base-operations{
+            padding-left: 8px;
+        }
+    }
+}
+.#{$selfMadeIn}-wrap {
+    .#{$selfMadeIn}-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        margin-top: 12px;
+        padding: 0 10px 0 20px;
+        border: solid 1px #e2e2e2;
+        .title {
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+        .ant-btn-primary {
+            width: 72px;
+            height: 30px;
+        }
+        .show-more-info {
+            display: block;
+            width: 100px;
+            height: 20px;
+            line-height: 20px;
+            padding: 0 10px;
+            position: absolute;
+            top: 70px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            font-size: 12px;
+            background: #ffffff;
+            text-align: center;
+            border: 1px solid #e2e2e2;
+            border-radius: 10px;
+            color: #999999;
+            z-index: 1;
+        }
+    }
+    .#{$selfMadeIn}-base-info {
+        border-left: solid 1px #e2e2e2;
+        border-right: solid 1px #e2e2e2;
+        border-bottom: solid 1px #e2e2e2;
+        .ant-col-8 {
+            padding: 0px 16px 6px;
+        }
+        .title {
+            font-size: 14px;
+            color: #4a4a4a;
+            padding: 20px 0 10px 20px;
+        }
+        .sourceOrder {
+            .ant-table-thead>tr>th.ant-table-selection-column,
+            .ant-table-tbody>tr>td.ant-table-selection-column {
+                width: 40px;
+                min-width: 40px;
+                text-align: left;
+            }
+        }
+    }
+    .#{$selfMadeIn}-detail-info {
+        .#{$selfMadeIn}-table {
+            .ant-table-title {
+                .tab-title {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px 0 18px 20px;
+                    .left-text {
+                        font-size: 14px;
+                        color: #4a4a4a
+                    }
+                    .c2mfont {
+                        padding-right: 4px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//详情页
+$selfMadeInView: "selfMadeInView";
+.#{$selfMadeInView}-wrap {
+    .#{$selfMadeInView}-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        margin-top: 12px;
+        border: solid 1px #e2e2e2;
+        padding: 22px 10px 22px 18px;
+        .title {
+            .mtitle {
+                font-size: 14px;
+                color: #4a4a4a;
+            }
+            .stitle {
+                font-size: 12px;
+                color: #999999;
+            }
+        }
+        .ant-btn {
+            width: 72px;
+            height: 30px;
+        }
+        .ant-btn-ghost {
+            padding: 0;
+            margin-left: 10px;
+            .anticon {
+                margin-left: 0;
+            }
+        }
+        .show-more-info {
+            display: block;
+            width: 100px;
+            height: 20px;
+            line-height: 20px;
+            padding: 0 10px;
+            position: absolute;
+            top: 70px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            font-size: 12px;
+            background: #ffffff;
+            text-align: center;
+            border: 1px solid #e2e2e2;
+            border-radius: 10px;
+            color: #999999;
+            z-index: 1;
+        }
+    }
+    .#{$selfMadeInView}-base-info {
+        border-left: solid 1px #e2e2e2;
+        border-right: solid 1px #e2e2e2;
+        border-bottom: solid 1px #e2e2e2;
+        .ant-col-12 {
+            padding: 25px 0px 30px 17px;
+            .info-title {
+                font-size: 14px;
+                color: #4a4a4a;
+                padding-bottom: 16px;
+            }
+        }
+        ul>li {
+            min-height: 24px;
+            line-height: 24px;
+            span {
+                color: #999999;
+                text-align: right;
+                display: inline-block;
+                width: 60px;
+            }
+        }
+    }
+    .#{$selfMadeInView}-detail-info {
+        .ant-table-title {
+            .tab-title {
+                padding: 20px 0 7px 0px;
+                .left-text {
+                    font-size: 14px;
+                    color: #4a4a4a
+                }
+            }
+        }
+        .materialSpec {
+            padding-left: 20px;
+        }
+    }
+    .#{$selfMadeInView}-log {
+        .title {
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+        .row {
+            font-size: 12px;
+            line-height: 27px;
+            .date {
+                color: #999999;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+//执行页
+$selfMadeInExec: "selfMadeInExec";
+.#{$selfMadeInExec}-wrap {
+    .ant-tabs-bar {
+        margin-bottom: 10px;
+    }
+}
+
+.#{$selfMadeIn}-preRec {
+    .ant-modal-body {
+        padding: 0 20px 20px;
+        .head {
+            color: #999999;
+            height: 62px;
+            background-color: #f0f0f0;
+            padding: 5px 9px 11px 23px;
+            margin-bottom: 20px;
+            .head-row {
+                display: flex;
+                justify-content: space-between;
+                line-height: 23px;
+                .planQty {
+                    color: #F5A623;
+                }
+                .preReceiveQty {
+                    color: #7ed321;
+                }
+            }
+        }
+        .title {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+.SelfMadeIn-detail-line {
+    .ant-modal-body {
+        padding: 0;
+    }
+}

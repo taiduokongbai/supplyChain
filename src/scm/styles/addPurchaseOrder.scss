@@ -1,0 +1,322 @@
+$purOrder: "purOrder";
+.purOrder-body{
+    .purchaseOrder-table-padding{
+        padding-left: 10px
+    }
+    .operation-center{
+        .c2m-shanchu{
+            margin-right: 10px;
+        }
+    }
+}
+.purOrder-wrap {
+    .#{$purOrder}-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        margin-top: 12px;
+        padding: 0 20px 0 16px;
+        border: solid 1px #e2e2e2;
+        .title {
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+        .ant-btn .ant-btn-primary {
+            width: 72px;
+            height: 30px;
+        }
+        .show-more-info {
+            display: block;
+            width: 100px;
+            height: 20px;
+            line-height: 20px;
+            padding: 0 10px;
+            position: absolute;
+            top: 50px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            font-size: 12px;
+            background: #ffffff;
+            text-align: center;
+            border: 1px solid #e2e2e2;
+            border-radius: 10px;
+            color: #999999;
+            z-index: 1;
+        }
+    }
+    .#{$purOrder}-base-info {
+        border-left: solid 1px #e2e2e2;
+        border-right: solid 1px #e2e2e2;
+        border-bottom: solid 1px #e2e2e2;
+        .tax-item{
+            .ant-col-8{
+                border: 0;
+                padding: 0;
+            }
+        }
+        .ant-col-8 {
+            border-right: solid 1px #e2e2e2;
+            padding: 24px 16px 6px;
+            .info-title {
+                font-size: 14px;
+                color: #4a4a4a;
+                padding-bottom: 16px;
+                padding-left: 20px;
+            }
+        }
+        .show-more-info {
+            position: absolute;
+            right: 12px;
+            bottom: 7px;
+        }
+    }
+    .#{$purOrder}-other-info {
+        // border-left: solid 1px #e2e2e2;
+        // border-right: solid 1px #e2e2e2;
+        border-top: solid 1px #e2e2e2;
+        .ant-col-8 {
+            padding: 0 16px 6px;
+        }
+        .info-title {
+            padding: 24px 16px 30px;
+            font-size: 14px;
+            color: #4a4a4a;
+            padding-bottom: 16px;
+        }
+        .purchase-message{
+            height: 80px;
+            overflow-y: auto;
+            // border: 1px solid #d9d9d9;
+            // border-radius: 4px;
+            line-height: 1.8;
+            padding: 6px 7px;
+        }
+    }
+    .#{$purOrder}-detail-info {
+        margin-top: 11px;
+        .purchaseDetail-table {
+            .ant-table-thead > tr > th.operation-center{
+                padding-right: 10px;
+            }
+            .operation-center{
+                text-align: center;
+            }
+            .ant-table-tbody > tr,.ant-table-thead > tr{
+                th{
+                    line-height: 19px;
+                }
+                td{
+                    line-height: 19px;
+                }
+            }
+            .lineNum-center{
+                text-align: center;
+                padding-left: 0;
+            }
+            a:focus{
+                text-decoration: none;
+            }
+            .ant-table-title {
+                .tab-title {
+                    display: flex;
+                    justify-content: space-between;
+                    .left-text {
+                        color: #4a4a4a
+                    }
+                    .total {
+                        .laber {
+                            padding-left: 20px;
+                            color: #999999;
+                        }
+                        .number {
+                            color: #fe8010;
+                        }
+                    }
+                    .c2mfont {
+                        padding-right: 5px;
+                        padding-left: 20px;
+                    }
+                    .ant-btn{
+                        color: #7095cd;
+                        margin-left: 20px;
+                        border: 0;
+                    }
+                    .ant-btn[disabled]{
+                        background-color: #fff;
+                        color: rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+        }
+        .purchaseOrder-table-padding{
+            padding-left: 10px
+        }
+    }
+}
+
+.purOrder-detail-line {
+    .text-ellipsis{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 200px;
+        cursor: pointer;
+    }
+    .ant-modal-body {
+        padding: 12px 20px 0;
+        .ant-form-item-label label {
+            font-size: 12px;
+            color: #a3a3a3;
+        }
+        .ant-row .ant-form-item {
+            margin-bottom: 10px;
+            .ant-col-6 {
+                width: 88px;
+            }
+            .ant-col-14 {
+                width: 200px;
+            }
+            .ant-col-18 {
+                width: 562px;
+            }
+        }
+        .material-info {
+            background-color: #f0f0f0;
+            padding: 4px 0;
+            margin-bottom: 10px;
+            .ant-row .ant-form-item {
+                margin-bottom: 0px;
+            }
+            .ant-form-item-label {
+                line-height: 24px;
+            }
+            .ant-form-item-control {
+                line-height: 24px;
+            }
+        }
+        .unit-item{
+            .ant-select-selection{
+                border: 0;
+                color: #4a79c0;
+                user-select: none;
+            }
+            .ant-select-selection:focus{
+                border-color:none;
+                box-shadow:none;
+            }
+        }
+        .tax {
+            display: flex;
+            align-items: flex-end;
+            .tax-info {
+                margin-left: 8px;
+                font-size: 12px;
+                color: #a3a3a3;
+                margin-bottom: 10px;
+                line-height: 32px;
+                .expenceBtn{
+                    border: 0;
+                    color: #4a79c0;  
+                }
+                .ant-btn[disabled]{
+                    background-color: #fff; 
+                    color: rgba(0, 0, 0, 0.25);
+                }
+                .ant-btn:focus{
+                    border-color:none;
+                    box-shadow:none;
+                }
+            }
+        }
+        .ant-col-12 {
+            width: 362px;
+        }
+        .ant-col-24 {
+            display: flex;
+            align-items: flex-end;
+            .remarks {
+                font-size: 12px;
+                color: #a3a3a3;
+                margin-left: 8px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .table-tooltip{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+}
+.purOrder-expense-cont{
+    .table-tooltip{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+    .ant-modal-body{
+        padding: 20px 60px 30px
+    }
+    .purExpenseDetail-baseInfo{
+        .purExpenseDetail-title{
+            border-bottom: solid 1px #E7E8EA;
+            padding-left: 10px;
+            .purExpenseDetail-ctitle{
+                margin-bottom: 10px;
+                overflow: hidden;
+                color: #999;
+                span{
+                    float: left;
+                    width: 60px;
+                    text-align: right
+                }
+                .table-tooltip{
+                    float: left;
+                    color: #4a4a4a;
+                }
+            }
+        }
+    }
+    .purExpenseDetail-table{
+        .operation-center{
+            text-align: center;
+        }
+        .ant-table-footer{
+            background: #fff;
+            border-radius: 0;
+            text-align: right;
+            border-bottom: solid 1px #E7E8EA;
+            color: #999;
+            font-size: 14px;
+            span{
+                color: #fe8010;
+            }
+        }
+        .columns-distribute{
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid #e2e2e2;
+            border-radius: 100%;
+            color: #999;
+        }
+        .columns-distribute:hover {
+            background-color: #4c80cf;
+            color: #fff;
+            border: 1px solid #4c80cf;
+        }
+    }
+    .purExpenseDetailView-table{
+        .ant-table-footer{
+            border-bottom: 0;
+        }
+    }
+}
+.purOrder-expenseView-cont{
+    .ant-modal-footer{
+        padding: 0;
+    }
+}

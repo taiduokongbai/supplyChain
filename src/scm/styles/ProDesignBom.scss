@@ -1,0 +1,248 @@
+.uploadProDesignBom{
+    margin:-12px -40px;
+    .ant-upload-list-picture{
+        .ant-upload-list-item:nth-child(5n+0){
+            margin-right:0px;
+        }
+        .ant-upload-list-item{
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #d9d9d9;
+            height: 190px;
+            width: 160px;
+            position: relative;
+            float: left;
+            margin-right:20px;
+            .anticon-cross{
+                font-size: 18px;
+            }
+            
+            .ant-upload-list-item-name{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin: 0;
+                line-height: 44px;
+                -webkit-transition: all .3s;
+                transition: all .3s;
+                padding-left: 0;
+                padding-right: 0;
+                max-width: 100%;
+                display: inline-block;
+                box-sizing: border-box;
+                margin-top: 140px;
+            }
+            .ant-upload-list-item-thumbnail{
+                width: 140px;
+                height: 140px;
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                img{
+                    width: 140px;
+                    height: 140px;
+                    display: block;
+                    overflow: hidden;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+     .status_img{
+         margin:42px 0 0 276px;
+         height:97px;
+         img,p{
+             float: left;
+         }
+         p{
+             font-size: 18px;
+             color: #999;
+             margin-top:30px;
+         }
+     }
+}
+.one-step{
+    .top{
+        padding-top: 20px;
+    }
+    .ant-table-thead > tr > th:last-child,
+    .ant-table-tbody > tr > td:last-child {
+        padding-left: 0;
+        text-align: center;
+    }
+    .add{
+        cursor: pointer;
+        color: #4C80CF;
+        display: inline-block;
+        padding-top: 14px;
+        .c2mfont{
+            padding-right: 8px;
+        }
+    }
+}
+.pro-design-bom-list{
+    .roll-first{
+        padding-left: 15px;
+    }
+}
+.import-bom-details{
+    .top{
+        margin-top: 12px;
+        height: 74px;
+        padding: 22px 16px;
+        border: 1px solid #E2E2E2;
+        .left{
+            float: left;
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+        .right{
+            float: right;
+            .edit{
+                background: #4C80CF;
+                border: 1px solid #4C80CF;
+                color: #fff;
+                margin-right: 10px;
+                font-size: 12px;
+                .c2mfont{
+                    padding-right: 5px;
+                    position: relative;
+                    font-size: 14px;
+                }
+            }
+            .btn{
+                display: block;
+            }
+        }
+    }
+    .product-info{
+        padding: 18px 18px 12px 18px;
+        border: 1px solid #E2E2E2;
+        border-top: none;
+        .title{
+            border-bottom: 1px solid #E2E2E2;
+            padding-bottom: 12px;
+            .left{
+                text-align: left;
+                display: inline-block;
+                font-size: 14px;
+                color: #4a4a4a;
+            }
+            .right{
+                float:right;
+                position: relative;
+                .number{
+                    text-decoration: underline;
+                    color: #26B327;
+                    font-size: 18px;
+                }
+            }
+        }
+        .content,#content{
+            .per-row{
+                padding-top: 12px;
+                .name{
+                    display:inline-block;
+                    width: 80px;
+                    text-align: right;
+                    &.name-description{
+                        vertical-align: top;
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+                .details{
+                    width: 190px;
+                    display: inline-block;
+                    position: relative;
+                    top: 4px;
+                    .table-tooltip{
+                        display: inherit;
+                    }
+                    &.details-description{
+                        .table-tooltip{
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            white-space: normal;
+                        }
+                    }
+                }
+                .edit-name{
+                    margin-bottom: 0;
+                    input{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+    .table{
+        padding-top: 24px;
+        .table-title{
+            text-align: right;
+            .intro{
+                float: left;
+                font-size: 14px;
+                color: #4C4C4C;
+            }
+            .form-item{
+                display: inline-block;
+                margin-right: 20px;
+                &.form-item:last-child{
+                    margin-right:0;
+                }
+                .width{
+                    width: 200px;
+                }
+                .btn{
+                    .c2mfont{
+                        margin-right: 5px;
+                    }
+                    background: #4C80CF;
+                    border: 0 solid #4C80CF;
+                    color: #fff;
+                    font-size: 12px;
+                }
+            }
+            .fixed-first{
+                text-align: center;
+                padding-left: 0;
+            }
+            .scroll-first{
+                padding-left: 4px;
+            }
+        }
+    }
+}
+.pro-design-bom-details{
+    .ant-dropdown-menu-item:hover{
+        background-color: #fff;
+    }
+    .btn{
+        display: block;
+        border: none;
+        width: 98px;
+        a:active{
+            text-decoration: none;
+        }
+    }
+    .ant-btn:hover{
+        background-color: #DDE6F1;
+        color: #4b4b4b;
+        font-size: 12px;
+    }
+    .ant-dropdown-menu-item{
+        padding: 0;
+    }
+}
+
+.productCategoryCode{
+    .ant-select-selection--single{
+        height:32px;
+    }
+}
+
+

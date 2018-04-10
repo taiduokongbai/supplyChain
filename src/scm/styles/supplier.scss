@@ -1,0 +1,158 @@
+.ew-layout-content {
+    background: #fff;
+    .ew-tabs {
+        .ant-tabs-nav {
+            margin-left: 0;
+        }
+        .ant-tabs {
+            overflow: visible;
+            background: #fff;
+            .ant-tabs-content {
+                .ant-tabs-tabpane {
+                    .customerView-content,
+                    .supplierView-content {
+                        box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.2);
+                       // background: #f1f1f1;
+                        .supplierTabs {
+                            position:relative;
+                            // -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+                            // -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+                            // box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+                            // background: #fff;
+                            .ant-tabs-bar {
+                                // border-bottom: 3px solid #7095cd;
+                                // background-color: transparent;
+                                .ant-tabs-nav-container {
+                                    overflow: visible;
+                                    .ant-tabs-nav-wrap {
+                                        overflow: visible;
+                                        //background: #f1f1f1;
+                                        .ant-tabs-nav-scroll {
+                                            overflow: visible;
+                                            .ant-tabs-tab {
+                                                // border-radius: 4px 4px 0 0;
+                                                // box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                                            }
+                                            .ant-tabs-tab-active {
+                                                // background-color: #7095cd;
+                                                // color: #fff;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .ant-tabs-content {
+                                .ant-tabs-tabpane {
+                                    >div {
+                                        box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.2);
+                                        .contactBtn {
+                                            margin: 20px 0px 20px 0px;
+                                        }
+                                        .ant-table-wrapper {
+                                            .ant-table{
+                                                overflow: visible;
+                                                .ant-table-title{
+                                                    position: absolute;
+                                                    top: -35px;
+                                                    right: 0px;
+                                                }
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .supplier-cont {
+        .table-operation{
+            text-align: center;
+        }
+        .ant-table-tbody .table-operation>div{
+            padding-left: 8px;
+        }
+        .operation-center{
+            text-align: center
+        }
+        .ant-table-content{
+            .ant-table-body{
+                .handle{
+                    text-align: center;
+                }
+            }
+        }
+        .supplier-head {
+            line-height: 68px;
+            border-bottom: 2px solid #e5e8ec;
+            .ant-select {
+                margin: 0 20px !important;
+            }
+            .ant-btn {
+                float: right;
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+            .supplier-btns {
+                float: right;
+                .supplier-btn {
+                    color: #fff;
+                    background-color: #4C80CF;
+                    border-color: #4C80CF;
+                }
+                .ant-btn {
+                    float: none;
+                }
+                a{
+                    color:"#fff";
+                    text-decoration:"none";
+                }
+                a:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.supplier-add{
+    .supplier-addHead{
+        height:60px; 
+        line-height:60px;
+        margin-top:12px ;
+        border:1px solid #e2e2e2;
+        .headTitle{
+            text-align:center;
+            font-size:14px;
+        }
+    }
+    .supplier-addCenter{
+        border:1px solid #e2e2e2;
+        border-top:0px;
+        .centerTop{
+            border-bottom:1px solid #e2e2e2;
+        }
+        .centerTitle{
+            font-size: 12px;
+            font-weight: bold;
+            margin:24px 0px 12px 16px;
+        }
+        .centerBotton{
+            border-top: 1px solid #e2e2e2;
+            .ant-calendar-picker{
+                width: 100%;
+            }
+        }
+        .centerBody{
+            position: relative;
+        }
+        a{
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+        }
+    }
+}

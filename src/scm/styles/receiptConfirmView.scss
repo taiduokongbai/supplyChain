@@ -1,0 +1,103 @@
+.receiptConfirmView-cont{
+    margin-top: 20px;
+    .receiptConfirmView-title{
+        height: 80px; 
+        border: 1px solid #e2e2e2;
+        .ant-row{
+            .ant-col-22{
+                padding: 18px 0 0 20px;
+                h4{
+                    font-size: 14px;
+                    padding-bottom: 5px;
+                }
+                p{
+                    font-size: 12px;
+                    color:#999
+                }
+            }
+            .ant-col-2{
+                line-height: 80px;
+                text-align: right;
+                padding-right: 20px;
+                .saveBtn{
+                    width: 72px;
+                    height: 30px;
+                    padding: 0;
+                    background: #4C80CF;
+                    border-color: #4C80CF;
+                    position: relative;
+                    padding-left: 16px;
+                    .c2m-zhihang {
+                        font-size: 22px;
+                        position: absolute;
+                        top: 3px;
+                        left: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .receiptConfirmView-col{
+        border: 1px solid #e2e2e2;
+        border-top: 0;
+        padding-bottom: 20px;
+        .receiptConfirmView-stitle{
+            font-size: 14px;
+            font-weight: bold;
+            padding: 15px 0px 5px 20px;
+        }
+        .base-info{
+            margin-left: 10px;
+            li{
+                line-height: 32px;
+                color: #4a4a4a;
+                span{
+                    display: inline-block;
+                    width: 95px;
+                    text-align: right;
+                    color: #999;
+                }
+            }
+        }
+        .receiptConfirmView-remark{
+            p{
+                margin-left: 10px;
+                color: #4A4A4A;
+                span{
+                    width: 85px;
+                    display: inline-block;
+                    text-align: right;
+                    color: #999;
+                }
+            }
+        }
+    }
+    .receiptConfirmViewDetail-table{
+        h5{
+            font-size: 14px;
+            margin: 20px 0 15px;
+        }
+        .ant-table-body{
+            .align-center{
+                text-align: center;
+                .columns-distribute{
+                    margin-left: 10px
+                }
+            }
+            .align-center-first{
+                text-align: center;
+                padding-left: 0;
+            }
+        }
+    }
+}
+.receiptConfirmList-table{
+    .ant-table-body{
+        .align-center{
+            text-align: center;
+            .columns-distribute{
+                margin-left: 10px
+            }
+        }
+    }
+}

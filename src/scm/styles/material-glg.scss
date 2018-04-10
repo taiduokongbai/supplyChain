@@ -1,0 +1,90 @@
+.material-glg{
+    .operate-center{
+        text-align: center;
+        margin: auto;
+        padding-right: 14px;
+    }
+        .ant-table-wrapper{
+            padding-bottom:30px;
+        }
+        .select-input-content{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            padding: 20px 0px;
+            .select-input{
+                width:200px;
+                height: 30px;
+                margin-right: 20px;
+                .ant-select-selection--single{
+                    height: 30px;
+                }
+            }
+
+            .selectForm{
+                 display: flex;
+                 flex-direction: row;
+                 height: 30px;
+                 .ant-form-item-control {
+                     font-size:0;
+                 }
+                .select-get-input{
+                    width: 200px;
+                    height: 30px;
+                }
+                .option_status{
+                    .ant-select-selection--single{
+                        height: 30px;
+                    }
+                }
+                .searchBar{
+                    margin-left: 17px;
+                    height: 30px;
+                    line-height: 1;
+                    width: 72px;
+                    padding: 0px;
+                    color: #fff;
+                    background-color: #4C80CF;
+                    border-color: #4C80CF;
+                    .search-icon{
+                        font-size: 10px;
+                        padding-right: 7px;
+                    }
+                 }
+                 .searchBar:hover{
+                    background: #fff;
+                    color: #108ee9;
+                 }
+             }
+            .newSet{
+                height:30px;
+                width: 72px;
+                position: absolute;
+                right: 0px;
+                color: #fff;
+                background-color: #4C80CF;
+                border-color: #4C80CF;
+                .newset-icon{
+                    font-size: 10px;
+                    padding-right: 7px;
+                }
+            }
+            .addBtn{
+                height:30px;
+                width: 72px;
+                position: absolute;
+                right: 10px;
+                color: #fff;
+                background-color: #4C80CF;
+                border-color: #4C80CF;
+                .newset-icon{
+                    font-size: 10px;
+                    padding-right: 7px;
+                }
+            }
+            .addBtn:hover,.newSet:hover{
+                background: #fff;
+                color: #108ee9;
+            }
+        }
+    }

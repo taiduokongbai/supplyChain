@@ -1,0 +1,58 @@
+$purRecNotice: "purRecNotice";
+.#{$purRecNotice}-wrap {
+    .#{$purRecNotice}-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        margin-top: 12px;
+        padding: 0 10px 0 20px;
+        border: solid 1px #e2e2e2;
+        .title {
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+        .ant-btn-primary {
+            width: 72px;
+            height: 30px;
+        }
+    }
+    .#{$purRecNotice}-base-info {
+        border-left: solid 1px #e2e2e2;
+        border-right: solid 1px #e2e2e2;
+        border-bottom: solid 1px #e2e2e2;
+        .ant-col-8 {
+            padding: 0px 16px;
+        }
+        .title {
+            font-size: 14px;
+            color: #4a4a4a;
+            padding: 20px 0 10px 20px;
+        }
+        .ant-col-24 {
+            padding: 0px 16px 8px;
+            .ant-col-2 {
+                width: 96.16px;
+            }
+        }
+    }
+    .#{$purRecNotice}-detail-info {
+        .#{$purRecNotice}-table {
+            .ant-table-title {
+                .tab-title {
+                    padding: 20px 0 18px 20px;
+                    .left-text {
+                        font-size: 14px;
+                        color: #4a4a4a
+                    }
+                }
+            }
+        }
+    }
+}
+
+.#{$purRecNotice}-list {
+    .planDate {
+        padding-left: 20px;
+    }
+}
